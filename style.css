@@ -22,18 +22,26 @@
     text-align: center;
 }
 
+.containerSkills {
+    margin: 100px;
+}
+
 .mainSkills {
+    margin: 15px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 20%;
+    justify-content: center;
+    gap: 50px;
 }
 
 .skills {
-    display: flex;
+    position: relative;
+    top: 50px;
+    right: 300px;
 }
 
 .mainImg {
+    position: relative;
     height: 200px;
-    margin-right: 30%;
+    left: 60%;
+    bottom: 40px;
 }
