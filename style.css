@@ -2,46 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #CECEE6;
 }
 
-.textMain {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
+body{
+    overflow-x: hidden;
 }
 
-.mainContainer {
+.textMain, .mainContainer, .menu {
     margin: 15px;
     display: flex;
     justify-content: center;
     gap: 50px;
-}
-
-.menu {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
+.textMain {
+    font-size: 40px;
+}
+
 .containerSkills {
-    margin: 100px;
-}
-
-.mainSkills {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.skills {
     position: relative;
-    top: 50px;
-    right: 300px;
+    left: 25%;
+    top: 160px;
+    font-size: 20px;
+}
+
+.skills, .frameworks {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+#mainFrameworks, .frameworks {
+    position: relative;
+    top: 60px;
 }
 
 .mainImg {
     position: relative;
-    height: 200px;
+    max-width: 25%;
     left: 60%;
-    bottom: 40px;
+    bottom: 50px;
 }
