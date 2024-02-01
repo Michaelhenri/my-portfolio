@@ -2,50 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #CECEE6;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
+    background-color: #CECEE6;
+}
+
+header {
+    background-color: #b3b3ef;
 }
 
 .textMain {
-    margin-top: 20px;
+    font-weight: 900;
+    padding-top: 20px;
     font-size: 40px;
     text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 }
 
-.mainContainer, .menu {
+.mainContainer,
+.menu {
     margin: 44px 0 20px 60px;
 
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
+    padding-bottom: 46px;
     cursor: pointer;
 }
 
 .mainSkills {
-    position: relative;
-    left: 20%;
-    top: 160px;
-    font-size: 20px;
+    margin-top: 50px;
 }
 
-.skills, .frameworks {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-  }
-
-#mainFrameworks, .frameworks {
+.skills {
+    display: inline-block;
     position: relative;
-    top: 60px;
+    top: -110px;
+    margin-left: 86px;
+    text-align: center;
 }
 
 .mainImg {
-    position: relative;
+    display: inline-block;
+    margin-left: 20%;
     max-width: 25%;
-    left: 55%;
-    bottom: 70px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+
+.developer {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 50px;
+}
+
+.frameworks {
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 50px;
+}
+
+.pSkills,
+.pFrameW {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
 }
