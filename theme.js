@@ -1,5 +1,6 @@
 const checkboxTema = document.querySelector('#tema-escuro');
 const body = document.querySelector('body');
+const header = document.querySelector('header')
 
 function mudarTema() {
   // Verifica o tema atual
@@ -8,6 +9,9 @@ function mudarTema() {
   // Altera o tema
   body.classList.toggle('light');
   body.classList.toggle('dark');
+
+  header.classList.toggle('light');
+  header.classList.toggle('dark');
 
   // Salva a preferência do usuário no localStorage
   localStorage.setItem('temaPreferido', temaAtual === 'dark' ? 'light' : 'dark');
