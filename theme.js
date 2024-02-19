@@ -1,30 +1,25 @@
-const checkboxTema = document.querySelector('#tema-escuro');
+const moon = document.querySelector('.icone-lua')
+const sun = document.querySelector('.icone-sol')
 const body = document.querySelector('body');
 const header = document.querySelector('header')
 
-function mudarTema() {
-  // Verifica o tema atual
-  const temaAtual = body.classList.contains('dark') ? 'dark' : 'light';
-
-  // Altera o tema
-  body.classList.toggle('light');
-  body.classList.toggle('dark');
-
-  header.classList.toggle('light');
-  header.classList.toggle('dark');
-
-  // Salva a preferência do usuário no localStorage
-  localStorage.setItem('temaPreferido', temaAtual === 'dark' ? 'light' : 'dark');
+function mudarParaTemaEscuro() {
+  body.classList.remove('light');
+  body.classList.add('dark');
+  header.classList.remove('light');
+  header.classList.add('dark');
+  localStorage.setItem('temaPreferido', 'dark');
 }
 
-// Adiciona o evento de clique ao checkbox
-checkboxTema.addEventListener('change', mudarTema);
-
-// Verifica a preferência do usuário salva no localStorage
-const temaPreferido = localStorage.getItem('temaPreferido');
-if (temaPreferido) {
-  body.classList.add(temaPreferido);
-  checkboxTema.checked = temaPreferido === 'dark';
+function mudarParaTemaClaro() {
+  body.classList.remove('dark');
+  body.classList.add('light');
+  header.classList.remove('dark');
+  header.classList.add('light');
+  localStorage.setItem('temaPreferido', 'light');
 }
-leSwitch.addEventListener('click', toggleTheme);
+
+moon.addEventListener('click', mudarParaTemaEscuro);
+sun.addEventListener('click', mudarParaTemaClaro);
+
 
