@@ -9,82 +9,19 @@ body {
     overflow-x: hidden;
 }
 
-.theme {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    float: right;
-    position: relative;
-    top: 10px;
-    right: 10px;
-    padding: 1px;
-    border: solid 2px;
-    border-radius: 20px 20px 20px 20px;
-    height: 26px;
-    width: 58px;
-}
-
-/* Checkbox */
-
-.botao-checkbox {
-    appearance: none;
-}
-
-/* Ícone de Lua */
-
-.icone-lua img {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    margin-bottom: -4px;
-    margin-right: 5px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    transition: all 0.2s ease-in-out;
-}
-
-/* Ícone do sol*/
-
-.icone-sol img {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    margin-bottom: -4px;
-    margin-right: 4px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    transition: all 0.2s ease-in-out;
-    filter: invert(1)
-}
-
-/* Tema Claro */
-
-body.light {
-    background-color: #CCCDE5;
-    color: #333;
-}
-
-header.light {
-    background-color: #b8baf0;
-}
-
-/* Tema Escuro */
-
-body.dark {
-    background-color: #333;
-    color: #CCCDE5;
-}
-
-header.dark {
-    background-color: #242323;
-    color: #CCCDE5;
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding-bottom: 64px;
+    z-index: 100;
 }
 
 .textMain {
     display: flex;
     justify-content: center;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 43px;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-image: url(img/water-flow.gif);
@@ -97,26 +34,36 @@ header.dark {
 
 .mainContainer,
 .menu {
-    margin: 32px 0 20px 60px;
+    margin: 11px 0 -24px 47px;
     font-weight: 600;
     font-size: 20px;
-    line-height: 29px;
-    padding-bottom: 46px;
+    line-height: 11px;
+}
+
+.menu {
     cursor: pointer;
 }
 
 .mainSkills {
     display: flex;
-    margin-top: 63px;
+    margin-top: 218px;
 
 }
 
-.skills {
+#skills {
     margin-left: 86px;
     text-align: center;
+    opacity: 0;
+    transform: translateX(120px);
 }
 
-.mainImg {
+#skills.animar {
+    animation-name: mainSkillsSlide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#mainImg {
     margin-left: 20%;
     max-width: 21%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -124,6 +71,21 @@ header.dark {
     transition: color 0.8s ease-in-out,
         transform 0.8s ease-in-out,
         background-color 0.8s ease-in-out;
+    opacity: 0;
+    transform: translateX(-120px);
+}
+
+#mainImg.animar {
+    animation-name: mainSkillsSlide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mainSkillsSlide {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .mainImg:hover {
@@ -152,27 +114,27 @@ header.dark {
     line-height: 30px;
 }
 
-.about-me {
+#about-me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 190px;
 }
 
-.about-me h1 {
+#about-me h1 {
     font-size: 38px;
     font-weight: 600;
 }
 
-.about-me p {
+#about-me p {
     font-size: 20px;
     line-height: 30px;
     margin: 25px 358px;
-    width: 450px
+    width: 850px
 }
 
-.about-me button {
+#about-me button {
     width: 142px;
     height: 52px;
     background: #9499EA;
@@ -188,15 +150,34 @@ header.dark {
         background-color 0.8s ease-in-out;
 }
 
-.about-me button:hover {
+#about-me button:hover {
     color: #ffffff;
     transform: scale(1.1);
 }
 
-.projects {
-    margin: 150px 0 20px 60px;
+.contacts {
+    background-color: #b8baf0;
+    padding: 20px;
 }
 
-.contacts {
-    margin: 150px 0 20px 60px;
+.contacts h2 {
+    margin-left: 40px;
+}
+
+.contacts p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.container-contacts img{
+    height: 25px;
 }

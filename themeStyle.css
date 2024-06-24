@@ -1,0 +1,88 @@
+.theme {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 30px;
+    padding: 1px;
+    border: solid 2px;
+    border-radius: 20px 20px 20px 20px;
+    height: 26px;
+    width: 58px;
+    z-index: 1;
+}
+
+/* Checkbox */
+
+.botao-checkbox {
+    appearance: none;
+}
+
+/* Ícone de Lua */
+
+.icone-lua img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ícone do sol*/
+
+.icone-sol img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    margin-right: 4px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+body.dark .icone-sol img {
+    filter: invert(1);
+    border: none;
+}
+
+body.dark .icone-lua img {
+    border: none;
+}
+
+/* Tema Claro */
+
+body.light {
+    background-color: #CCCDE5;
+    color: #333;
+}
+
+header.light {
+    background-color: #b8baf0;
+}
+
+footer.light {
+    background-color: #b8baf0;
+}
+
+/* Tema Escuro */
+
+body.dark {
+    background-color: #333;
+    color: #CCCDE5;
+}
+
+header.dark {
+    background-color: #242323;
+    color: #CCCDE5;
+}
+
+footer.dark {
+    background-color: #242323;
+    color: #CCCDE5;
+}

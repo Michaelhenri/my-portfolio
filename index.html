@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="themeStyle.css">
+  <link rel="stylesheet" href="projectsStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
@@ -34,9 +36,9 @@
   </header>
 
   <section class="mainSkills">
-    <img class="mainImg" src="./img/Michael.jpeg">
+    <img id="mainImg" class="animar" src="./img/Michael.jpeg">
 
-    <div class="skills">
+    <div id="skills" class="animar">
       <h1 class="hello">Olá, sou o Michael Henrique</h1>
       <h2 class="developer">Desenvolvedor Front-End</h1>
         <p class="pSkills">HTML</p>
@@ -50,27 +52,65 @@
     </div>
   </section>
 
-  <section class="about-me">
+  <section id="about-me" class="animar">
     <h1>Sobre mim</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro enim,
-      id libero excepturi fugiat, nemo quas quisquam hic facere optio, eos magni
-      autem corrupti alias. Nesciunt architecto quis illum?
+    <p>Olá, tenho 27 anos, trabalho em uma empresa de Telecomunicação onde fui supervisor do setor de logística e
+      atualmente instalador e reparador de internet. No momento estudo desenvolvimento front-end pelo método incrível do
+      Rodolfo Mori em sua mentoria DevClub (formação full-stack) e tecnólogo em análise e desenvolvimento de sistemas
+      pela Estácio. Busco a oportunidade da transição de carreira como desenvolvedor para alcançar uma jornada
+      profissional como especialista, utilizando minhas habilidades e paixões para fazer a diferença no mercado e me
+      especializando para ser referência na área.
     </p>
     <button>Currículo</button>
   </section>
 
   <section class="projects">
     <h2>Projetos</h2>
-    <p>Instagram Home Page</p>
-    <p>WeCare</p>
+    <div class="container-project">
+      <figure class="card">
+        <img src="./img/ConversorDeMoedas.png" alt="img conversorDeMoedas" />
+        <figcaption>
+          <h3>Conversor de moedas</h3>
+          <p>HTML, CSS e JavaScript</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="./img/Draw.png" alt="img sorteio" />
+        <figcaption>
+          <h3>Dev Sorteio</h3>
+          <p>HTML, CSS e JavaScript</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="./img/jokenpo.png" alt="img jokenpo" />
+        <figcaption>
+          <h3>JokenPô</h3>
+          <p>HTML, CSS e JavaScript</p>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 
   <footer class="contacts">
     <h2>Contato</h2>
-    <a>Wahtsapp</a>
-    <a>Instagram</a>
-    <a>Facebook</a>
-    <a>Linkedin</a>
+    <div class="container-contacts">
+      <a href="#">
+        <img src="./img/whatsapp.png" alt="icone whatsapp" />
+      </a>
+      <a href="#">
+        <img src="./img/instagram.png" alt="icone instagram" />
+      </a>
+      <a href="#">
+        <img src="./img/github.png" alt="icone github" />
+      </a>
+      <a href="#">
+        <img src="./img/linkedin.png" alt="icone linkedin" />
+      </a>
+    </div>
+    <p>Email:</p>
+    <p>michaeldt2015@gmail.com</p>
   </footer>
 
   <script src="theme.js"></script>
