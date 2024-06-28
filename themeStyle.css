@@ -77,6 +77,11 @@ body.dark {
     color: #CCCDE5;
 }
 
+body.dark::-webkit-scrollbar-thumb {
+    background-color: #444; /* Cor da sobreposição no tema escuro */
+    border-radius: 5px; /* Cantos arredondados */
+  }
+
 header.dark {
     background-color: #242323;
     color: #CCCDE5;
